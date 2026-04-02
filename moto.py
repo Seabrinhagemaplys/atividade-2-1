@@ -2,7 +2,7 @@ from veiculo import Veiculo
 
 class Moto(Veiculo):
     def __init__(self, marca: str, modelo: str, ano_fabricacao: int, cilindradas: int):
-        super().init(marca, modelo, ano_fabricacao)
+        super().__init__(marca, modelo, ano_fabricacao)
         
         if cilindradas < 0:
                raise ValueError("Numero Invalido")
